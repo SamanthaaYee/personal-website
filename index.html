@@ -1,0 +1,389 @@
+<!-- personal comments:
+- make responsive
+- visual dividers between sections? (i.e. ariyas)
+
+functionality:
+- js type out name
+- php for form (or js????)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samantha yee</title>
+    <link rel="icon" type="image/x-icon" href="./images/letter-s.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Mukta&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap -->
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <a id="favicon" href= "#">S</a>
+        <a class="non-home" href= "#about-me">about me</a>
+        <a class="non-home" href= "#my-experiences">my experiences</a>
+        <a class="non-home" href= "#projects">projects</a>
+        <a class="non-home" href= "#contact-me">contact me</a>
+    </nav>
+
+    <div class="vertical-flex-container">
+
+        <!-- homepage -->
+        <div id="home-flex-container" class="v-fcard">
+            <div class="h-fcard">
+                <img id="profile-pic" src="./images/profile-picture.jpg" alt="profile picture" width="400px">
+            </div>
+
+            <div class="h-fcard">
+                <h1 id="title">hi, <br>i'm sam(antha)!</h1>
+                <p id="subtitle">an incoming 2A systems design engineering student <br> at the University of Waterloo. welcome to my website :)</p>
+
+                <br>
+
+                <!-- links -->
+                <div id="logo-flex-container">
+                    <div class="l-fcard">
+                        <a href="file:///C:/Users/saman/Downloads/1B%20Resume.pdf"> <button> check out my resume </button></a>
+                    </div>
+                    
+                    <a href="https://www.linkedin.com/in/samanthayee6/"> 
+                    <div class="l-fcard">
+                        <img class="logo-images" src="./images/linkedin.png" alt="linkedin logo" width="26px"></a>
+                    </div>
+
+                    <a href="https://github.com/SamanthaaYee"> 
+                    <div class="l-fcard">
+                        <img class="logo-images" src="./images/github.png" alt="github logo" width="26px"></a>
+                    </div>
+
+                    <a href="mailto: sayee@uwaterloo.ca"> 
+                    <div class="l-card">
+                        <img class="logo-images" src="./images/email.png" alt="email logo" width="26px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about me -->
+        <div id="about-me" class="v-fcard">
+            <div class="about-flex-container">
+                <!-- about -->
+                <div class="a-fcard">
+                    <h2>about</h2>
+                    <p> 
+                        my name is samantha yee and i'm in my second year at the University of Waterloo studying systems design engineering! <br><br>
+                        this term i'm working as a ux designer at Health Canada and during my previous co-op i worked as a software engineer <br><br>
+                        i love designing and creating new ideas. during my free time i enjoy coding/designing side projects, reading, working out and traveling! <br><br>
+                        i'm currently looking for spring 2024 co-op opportunities, let's connect!
+                    </p>
+                </div>
+                
+                <!-- skills -->
+                <div class="a-fcard">
+                    <h2>skills</h2>
+                    <div id="skills-grid-container">
+                        <!-- HTML block -->
+                        <div class="s-gcard">
+                            <img src="./images/html-logo.png" alt="HTML logo">
+                            <p>HTML</p>
+                        </div>
+
+                        <!-- CSS block -->
+                        <div class="s-gcard">
+                            <img src="./images/css-logo.png" alt="CSS logo">
+                            <p>CSS</p>
+                        </div>
+                        
+                        <!-- JS block -->
+                        <div class="s-gcard">
+                            <img src="./images/js-logo.png" alt="JavaScript logo">
+                            <p>JavaScript</p>
+                        </div>
+
+                        <!-- Python block -->
+                        <div class="s-gcard">
+                            <img src="./images/python-logo.png" alt="Python logo">
+                            <p>Python</p>
+                        </div>
+
+                        <!-- C++ block -->
+                        <div class="s-gcard">
+                            <img src="./images/c++-logo.png" alt="C++ logo">
+                            <p>C++</p>
+                        </div>
+
+                        <!-- Figma block -->
+                        <div class="s-gcard">
+                            <img src="./images/figma-logo.png" alt="Figma logo">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- my experiences -->
+        <div id="my-experiences" class="v-fcard">
+            <h2>my experiences</h2>
+            
+            <div id="timeline">
+
+                <!-- ux @ health canada blurb -->
+                <div class="timeline-flex-container">
+                    <div class="timeline-card timeline-left">
+                        <h3 class="timeline-title">ux designer @ Health Canada</h3>
+                        <p class="timeline-date">oct-dec 2023 | remote</p>
+                    </div>
+
+                    <div class="timeline-card timeline-right">
+                        <ul class="timeline-description">
+                            <li>led a project to improve the design and structure of Canada's Food Guide dashboard - the second most viewed on Canada.ca with <strong>3+ million visits and 9.7+ million page views</strong> in the past year - through conducting usability tests, heuristic evaluations and examining the information architecture</li>
+                            <li>proposed and implemented several design recommendations on Canada.ca, created on Figma and Canva adhering to WCAG and Canada's style guidelines</li>
+                        </ul>
+                        
+                        <p><strong>tools:</strong> Figma, Canva, UserZoom</p>                    
+                    </div>
+                </div>
+
+                <!-- swe @ health & rehab blurb -->
+                <div class="timeline-flex-container">
+                    <div class="timeline-card timeline-left">
+                        <h3 class="timeline-title">software engineer <br> @ Health & Rehab Research inc.</h3>
+                        <p class="timeline-date">jan-mar 2023 | remote</p>
+                    </div>
+
+                    <div class="timeline-card timeline-right">
+                        <!-- <p class="timeline-description">built and tested a machine learning classification model that continuously analyzes patient vital signs in order to detect underlying medical conditions up to an accuracy of 78%, as part of a larger mobile app development. using various data integration techniques, manipulated and interepreted datasets with over 4.6 million values.</p> -->
+
+                        <ul class="timeline-description">
+                            <li>built and tested a machine learning classification model that continuously analyzes patient vital signs in order to detect underlying medical conditions up to an <strong>accuracy of 78%</strong>, as part of a larger mobile app development</li>
+                            <li>using various data integration techniques, manipulated and interepreted datasets with over <strong>4.6 million values</strong></li>
+                        </ul>
+                        
+                        <p><strong>tools:</strong> Python, Git, MS Excel</p>
+                    </div>
+                </div>
+                
+                <!-- code instructor @ code ninjas blurb -->
+                <div class="timeline-flex-container">
+                    <div class="timeline-card timeline-left">
+                        <h3 class="timeline-title">code instructor @ Code Ninjas</h3>
+                        <p class="timeline-date">jun 2021 - aug 2022 | Oakville, ON</p>
+                    </div>
+
+                    <div class="timeline-card timeline-right">
+                        <ul class="timeline-description">
+                            <li>taught the fundamentals of programming in JavaScript, Node.js and Scratch to <strong>over 500 students</strong> through the design and development of games</li>
+                            <li>encouraged creativity and problem-solving skills in kids ages 5-14 through game creation in Roblox and Minecraft and programming LEGO robots using SPIKE Prime</li>
+                        </ul>
+                        
+                        <p><strong>tools:</strong> JavaScript, Node.js, LEGO robotics</p>
+                    </div>
+                </div>
+
+                <!-- assisstant teacher @ sms blurb -->
+                <div class="timeline-flex-container">
+                    <div class="timeline-card timeline-left">
+                        <h3 class="timeline-title">assistant teacher <br> @ Spirit of Math Schools</h3>
+                        <p class="timeline-date">sept 2019 - jun 2022 | Mississauga, ON</p>
+                    </div>
+
+                    <div class="timeline-card timeline-right">
+                        <ul class="timeline-description">
+                            <li>worked closely with students in grades 3-6 to teach them advanced mathematical problems, which significantly improved their academic performances</li>
+                            <li>coached, organised and prepared lessons for groups of <strong>up to 40 pupils </strong>per class</li>
+                        </ul>                    
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--<div id="timeline-grid-container">
+                <div class="timeline-card timeline-left">
+                    <div class="timeline-content">
+                        <p class="timeline-title">ux designer @ health canada</p>
+                        <p class="timeline-date">oct-dec 2023 | remote</p>
+                    </div>
+                </div>
+                <div class="timeline-card timeline-right">
+                    <div class="timeline-content">
+                        <p class="timeline-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>-->
+            <!-- <div id="timeline">
+                <div class="timeline-card timeline-left">
+                    <div class="timeline-content">
+                        <p class="timeline-title">ux designer @ health canada</p>
+                        <p class="timeline-date">oct-dec 2023 | remote</p>
+                    </div>
+                </div>
+                <div class="timeline-card timeline-right">
+                    <div class="timeline-content">
+                        <p class="timeline-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- projects -->
+        <div id="projects" class="v-fcard">
+            <h2>projects</h2>
+
+            <div id="projects-grid-container">
+                <!-- connectivIT card -->
+                <div class="projects-gcard">
+                    <div class="projects-flex-container">
+                        <div class="projects-fcard">
+                            <div class="img-stack">
+                                <img class="projects-banner" src="./images/1st-place-banner.png" alt="1st place winner banner">
+                                <img class="projects-img" src="./images/connectivit.png" alt="screenshot from connectivIT website" width="275px">
+                            </div>
+                            <!-- <p class="badge">1st place in Technova</p> -->
+                        </div>
+                        <div class="projects-fcard">
+                            <div class="link-flex-container">
+                                <a href="https://devpost.com/software/connectivit?ref_content=my-projects-tab&ref_feature=my_projects"> 
+                                    <h3 class="projects-text">connectivIT</h3></a>
+                                <a href="https://devpost.com/software/connectivit?ref_content=my-projects-tab&ref_feature=my_projects"> 
+                                    <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
+                            </div>
+                            <p class="projects-text">a program designed to donate electronic devices to rural, low-income areas, focusing on Indigenous reserves</p>
+                            <p class="projects-text"><strong>tools:</strong> HTML, CSS, JavaScript, Bootstrap, jQuery, SQL, PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BeFit card -->
+                <div class="projects-gcard">
+                    <div class="projects-flex-container">
+                        <div class="projects-fcard">
+                            <img class="projects-img" src="./images/befit.png" alt="pictures of BeFit interface and 'BeFit' logo" width="275px">
+                        </div>
+                        <div class="projects-fcard">
+                            <div class="link-flex-container">
+                                <a href="https://devpost.com/software/befit-t3igks"> 
+                                    <h3 class="projects-text">BeFit</h3> </a>
+                                <a href="https://devpost.com/software/befit-t3igks"> 
+                                    <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
+                            </div>
+                            <p class="projects-text">conceptualized a social app to encourage users to achieve on their fitness goals by completing daily challenges, and posting to friends</p>
+                            <p class="projects-text"><strong>tools:</strong> Figma, Swift</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Netflix card -->
+                <div class="projects-gcard">
+                    <div class="projects-flex-container">
+                        <div class="projects-fcard">
+                            <img class="projects-img" src="./images/flix.png" alt="pictures of Netflix portfolio Figma wireframe" width="275px">
+                        </div>
+                        <div class="projects-fcard">
+                            <div class="link-flex-container">
+                                <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
+                                    <h3 class="projects-text">my portfolio</h3></a>
+                                <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
+                                    <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
+                            </div>
+                            <p class="projects-text">designed a Figma wireframe of a portfolio to display my projects, emulating Netflix's UI - currently implementing this into code</p>
+                            <p class="projects-text"><strong>tools:</strong> Figma, HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hacker Olympics card -->
+                <div class="projects-gcard">
+                    <div class="projects-flex-container">
+                        <div class="projects-fcard">
+                            <div class="img-stack">
+                                <img class="projects-banner" src="./images/2nd-place-banner.png" alt="1st place winner banner">
+                                <img class="projects-img" src="./images/hacker-olympics.png" alt="screenshot from Hacker Olympics HTML and CSS website" width="275px">
+                            </div>
+                        </div>
+                        <div class="projects-fcard">
+                            <div class="link-flex-container">
+                                <a href="https://github.com/SheHacksDSP"> 
+                                    <h3 class="projects-text">Hacker Olympics</h3> </a>
+                                <a href="https://github.com/SheHacksDSP"> 
+                                    <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
+                            </div>
+                            <p class="projects-text">coordinated with a team to complete challenges in Python, HTML, CSS & machine learning - one of which was launching a responsive and mobile-friendly food review blog</p>
+                            <p class="projects-text"><strong>tools:</strong> Python, HTML, CSS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all-projects">
+                    <a href="https://www.notion.so/samantha-yee-d1a2574e399243599a3b4d5f24aeaef8?pvs=4">
+                        <button>see all projects!</button></a>
+                </div>
+
+               <!-- <div class="projects-gcard all-projects">
+                    <h3>see all projects</h3>
+                </div> -->
+            </div>
+
+        </div>
+
+        <!-- contact me -->
+        <div id="contact-me" class="v-fcard">
+            <div id="contact-me-container">
+                <!-- <img id="contact-bg-img" src="./images/contact-me.png" alt="picture of greece and ocean" width="100%"> -->
+
+                <form id="contact-form" action="./contact-form.php">
+                    <h2>contact me</h2>
+
+                    <label for="fname">full name:</label><br>
+                    <input type="text" placeholder="enter your full name" name="fname"><br><br>
+
+                    <label for="email">email:</label><br>
+                    <input type="email" placeholder="enter your email" name="email"><br><br>
+
+                    <label for="message">message:</label><br>
+                    <input id="contact-message" type="text" placeholder="type message" name="message"><br><br>
+
+                    <button id="contact-button" type="submit">send message</button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <p>Samantha Yee © 2023</p>
+
+            <div id="footer-logo-flex-container">
+                <a href="https://www.linkedin.com/in/samanthayee6/"> 
+                <div class="l-fcard">
+                    <img class="logo-images" src="./images/linkedin.png" alt="linkedin logo" width="30px"></a>
+                </div>
+
+                <a href="https://github.com/SamanthaaYee"> 
+                <div class="l-fcard">
+                    <img class="logo-images" src="./images/github.png" alt="github logo" width="30px"></a>
+                </div>
+
+                <a href="mailto: sayee@uwaterloo.ca"> 
+                <div class="l-card">
+                    <img class="logo-images" src="./images/email.png" alt="email logo" width="30px"></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
