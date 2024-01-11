@@ -9,6 +9,10 @@ body{
     background-color: #9EB384;
 }
 
+h1 {
+    color: #9EB384;
+}
+
 p{
     font-size: 1.1rem;
 }
@@ -18,6 +22,7 @@ p{
 }
 
 #subtitle {
+    color: #9EB384;
     font-size: 1rem;
     font-weight: lighter;
 }
@@ -38,8 +43,8 @@ footer {
 }
 
 button {
-    background-color: #FAF1E4;
-    color: #9EB384;
+    background-color: #9EB384;
+    color: #FAF1E4;
     border: 0px;
     border-radius: 4px;
     text-align: center;
@@ -58,6 +63,13 @@ button:hover {
     transform: translateY(4px);
   } */
 
+/* hr {
+    height: 0.5px;
+    width: 100%;
+    color: white;
+    background-color: white;
+} */
+
 /* nav bar styling */
 nav {
     position: fixed;
@@ -66,7 +78,9 @@ nav {
     width: 100%;
     padding: 2rem 8rem 1rem;
     top: 0;
+    left: 0;
     z-index: 2;
+    border-bottom: 1px solid #FAF1E4;
 }
 
 nav a {
@@ -78,7 +92,7 @@ nav a {
 
 nav a:hover {
     /*text-decoration: underline;*/
-    text-shadow: 4px 6px 6px rgba(0,0,0,0.24)
+    text-shadow: 4px 6px 6px rgba(0,0,0,0.24);
 }
 
 /* image styling */
@@ -129,14 +143,16 @@ nav a:hover {
 }
 
 .v-fcard {
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 #home-flex-container {
+    margin-top: 3rem;
     display: flex;
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    background-color: #FAF1E4;
     border: 1px solid #FAF1E4;
     border-radius: 10px;
     padding: 1rem;
@@ -227,6 +243,10 @@ nav a:hover {
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
 
+.s-gcard:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 50px 0 rgba(0,0,0,0.19);
+}
+
 .s-gcard p {
     color: #9EB384;
 }
@@ -250,8 +270,9 @@ nav a:hover {
 }
 
 .all-projects button {
+    background-color: #FAF1E4;
+    color: #9EB384;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
-    font-weight: bold;
     font-size: 1rem;
     width: 100%;
     height: 100%;
@@ -444,7 +465,7 @@ nav a:hover {
     color: #9EB384;
 }
 
-input[type=text], [type=email] {
+input[type=text], [type=email], textarea {
     height: 1rem;
     width: 100%;
     padding: 15px;
@@ -452,7 +473,11 @@ input[type=text], [type=email] {
     border-radius: 10px;
 }
 
-#contact-message {
+textarea {
+    resize: vertical;
+}
+
+#message {
     height: 5rem;
 }
 

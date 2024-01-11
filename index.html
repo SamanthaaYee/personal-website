@@ -1,6 +1,7 @@
 <!-- personal comments:
 - make responsive
 - visual dividers between sections? (i.e. ariyas)
+- add line between nav bar and site
 
 functionality:
 - js type out name
@@ -26,16 +27,19 @@ functionality:
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
 
+    <!-- javascript -->
+    <script src="./contact_form.js"></script>
+
 </head>
 
 <body>
     <!-- nav bar -->
     <nav>
         <a id="favicon" href= "#">S</a>
-        <a class="non-home" href= "#about-me">about me</a>
-        <a class="non-home" href= "#my-experiences">my experiences</a>
-        <a class="non-home" href= "#projects">projects</a>
-        <a class="non-home" href= "#contact-me">contact me</a>
+        <a class="non-home" href= "#about-me">ABOUT ME</a>
+        <a class="non-home" href= "#my-experiences">MY EXPERIENCES</a>
+        <a class="non-home" href= "#projects">PROJECTS</a>
+        <a class="non-home" href= "#contact-me">CONTACT ME</a>
     </nav>
 
     <div class="vertical-flex-container">
@@ -47,8 +51,8 @@ functionality:
             </div>
 
             <div class="h-fcard">
-                <h1 id="title">hi, <br>i'm sam(antha)!</h1>
-                <p id="subtitle">an incoming 2A systems design engineering student <br> at the University of Waterloo. welcome to my website :)</p>
+                <h1 id="title">hi, <br>i'm samantha!<span class="typewriter"></span></h1> 
+                <p id="subtitle">2A systems design engineering student at the<br>University of Waterloo - welcome to my website :)</p>
 
                 <br>
 
@@ -81,18 +85,18 @@ functionality:
             <div class="about-flex-container">
                 <!-- about -->
                 <div class="a-fcard">
-                    <h2>about</h2>
+                    <h2>ABOUT</h2>
                     <p> 
-                        my name is samantha yee and i'm in my second year at the University of Waterloo studying systems design engineering! <br><br>
-                        this term i'm working as a ux designer at Health Canada and during my previous co-op i worked as a software engineer <br><br>
-                        i love designing and creating new ideas. during my free time i enjoy coding/designing side projects, reading, working out and traveling! <br><br>
-                        i'm currently looking for spring 2024 co-op opportunities, let's connect!
+                        My name is Samantha Yee and I'm in my second year at the University of Waterloo studying Systems Design Engineering! <br><br>
+                        This past co-op term I worked as a UX Designer at Health Canada and during my previous co-op I worked as a software engineer. <br><br>
+                        I love designing and creating new ideas. During my free time I enjoy coding/designing side projects, reading, working out and traveling. <br><br>
+                        I'm currently looking for spring 2024 co-op opportunities, let's connect!
                     </p>
                 </div>
                 
                 <!-- skills -->
                 <div class="a-fcard">
-                    <h2>skills</h2>
+                    <h2>SKILLS</h2>
                     <div id="skills-grid-container">
                         <!-- HTML block -->
                         <div class="s-gcard">
@@ -136,74 +140,74 @@ functionality:
         
         <!-- my experiences -->
         <div id="my-experiences" class="v-fcard">
-            <h2>my experiences</h2>
+            <h2>MY EXPERIENCES</h2>
             
             <div id="timeline">
 
                 <!-- ux @ health canada blurb -->
                 <div class="timeline-flex-container">
                     <div class="timeline-card timeline-left">
-                        <h3 class="timeline-title">ux designer @ Health Canada</h3>
-                        <p class="timeline-date">oct-dec 2023 | remote</p>
+                        <h3 class="timeline-title">UX Designer @ Health Canada</h3>
+                        <p class="timeline-date">Oct-Dec 2023 | remote</p>
                     </div>
 
                     <div class="timeline-card timeline-right">
                         <ul class="timeline-description">
-                            <li>led a project to improve the design and structure of Canada's Food Guide dashboard - the second most viewed on Canada.ca with <strong>3+ million visits and 9.7+ million page views</strong> in the past year - through conducting usability tests, heuristic evaluations and examining the information architecture</li>
-                            <li>proposed and implemented several design recommendations on Canada.ca, created on Figma and Canva adhering to WCAG and Canada's style guidelines</li>
+                            <li>Led a project to improve the design and structure of Canada's Food Guide dashboard - the second most viewed on Canada.ca with <strong>3+ million visits and 9.7+ million page views</strong> in the past year - through conducting usability tests, heuristic evaluations and examining the information architecture</li>
+                            <li>Proposed and implemented several design recommendations on Canada.ca, created on Figma and Canva adhering to WCAG and Canada's style guidelines</li>
                         </ul>
                         
-                        <p><strong>tools:</strong> Figma, Canva, UserZoom</p>                    
+                        <p><strong>Tools:</strong> Figma, Canva, UserZoom</p>                    
                     </div>
                 </div>
 
                 <!-- swe @ health & rehab blurb -->
                 <div class="timeline-flex-container">
                     <div class="timeline-card timeline-left">
-                        <h3 class="timeline-title">software engineer <br> @ Health & Rehab Research inc.</h3>
-                        <p class="timeline-date">jan-mar 2023 | remote</p>
+                        <h3 class="timeline-title">Software Engineer <br> @ Health & Rehab Research inc.</h3>
+                        <p class="timeline-date">Jan-Mar 2023 | remote</p>
                     </div>
 
                     <div class="timeline-card timeline-right">
                         <!-- <p class="timeline-description">built and tested a machine learning classification model that continuously analyzes patient vital signs in order to detect underlying medical conditions up to an accuracy of 78%, as part of a larger mobile app development. using various data integration techniques, manipulated and interepreted datasets with over 4.6 million values.</p> -->
 
                         <ul class="timeline-description">
-                            <li>built and tested a machine learning classification model that continuously analyzes patient vital signs in order to detect underlying medical conditions up to an <strong>accuracy of 78%</strong>, as part of a larger mobile app development</li>
-                            <li>using various data integration techniques, manipulated and interepreted datasets with over <strong>4.6 million values</strong></li>
+                            <li>Built and tested a machine learning classification model that continuously analyzes patient vital signs in order to detect underlying medical conditions up to an <strong>accuracy of 78%</strong>, as part of a larger mobile app development</li>
+                            <li>Using various data integration techniques, manipulated and interepreted datasets with over <strong>4.6 million values</strong></li>
                         </ul>
                         
-                        <p><strong>tools:</strong> Python, Git, MS Excel</p>
+                        <p><strong>Tools:</strong> Python, Git, MS Excel</p>
                     </div>
                 </div>
                 
                 <!-- code instructor @ code ninjas blurb -->
                 <div class="timeline-flex-container">
                     <div class="timeline-card timeline-left">
-                        <h3 class="timeline-title">code instructor @ Code Ninjas</h3>
-                        <p class="timeline-date">jun 2021 - aug 2022 | Oakville, ON</p>
+                        <h3 class="timeline-title">Code Instructor @ Code Ninjas</h3>
+                        <p class="timeline-date">Jun 2021 - Aug 2022 | Oakville, ON</p>
                     </div>
 
                     <div class="timeline-card timeline-right">
                         <ul class="timeline-description">
-                            <li>taught the fundamentals of programming in JavaScript, Node.js and Scratch to <strong>over 500 students</strong> through the design and development of games</li>
-                            <li>encouraged creativity and problem-solving skills in kids ages 5-14 through game creation in Roblox and Minecraft and programming LEGO robots using SPIKE Prime</li>
+                            <li>Taught the fundamentals of programming in JavaScript, Node.js and Scratch to <strong>over 500 students</strong> through the design and development of games</li>
+                            <li>Encouraged creativity and problem-solving skills in kids ages 5-14 through game creation in Roblox and Minecraft and programming LEGO robots using SPIKE Prime</li>
                         </ul>
                         
-                        <p><strong>tools:</strong> JavaScript, Node.js, LEGO robotics</p>
+                        <p><strong>Tools:</strong> JavaScript, Node.js, LEGO robotics</p>
                     </div>
                 </div>
 
                 <!-- assisstant teacher @ sms blurb -->
                 <div class="timeline-flex-container">
                     <div class="timeline-card timeline-left">
-                        <h3 class="timeline-title">assistant teacher <br> @ Spirit of Math Schools</h3>
-                        <p class="timeline-date">sept 2019 - jun 2022 | Mississauga, ON</p>
+                        <h3 class="timeline-title">Assistant Teacher <br> @ Spirit of Math Schools</h3>
+                        <p class="timeline-date">Sept 2019 - Jun 2022 | Mississauga, ON</p>
                     </div>
 
                     <div class="timeline-card timeline-right">
                         <ul class="timeline-description">
-                            <li>worked closely with students in grades 3-6 to teach them advanced mathematical problems, which significantly improved their academic performances</li>
-                            <li>coached, organised and prepared lessons for groups of <strong>up to 40 pupils </strong>per class</li>
+                            <li>Worked closely with students in grades 3-6 to teach them advanced mathematical problems, which significantly improved their academic performances</li>
+                            <li>Coached, organised and prepared lessons for groups of <strong>up to 40 pupils </strong>per class</li>
                         </ul>                    
                     </div>
                 </div>
@@ -240,7 +244,7 @@ functionality:
 
         <!-- projects -->
         <div id="projects" class="v-fcard">
-            <h2>projects</h2>
+            <h2>PROJECTS</h2>
 
             <div id="projects-grid-container">
                 <!-- connectivIT card -->
@@ -260,8 +264,8 @@ functionality:
                                 <a href="https://devpost.com/software/connectivit?ref_content=my-projects-tab&ref_feature=my_projects"> 
                                     <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
                             </div>
-                            <p class="projects-text">a program designed to donate electronic devices to rural, low-income areas, focusing on Indigenous reserves</p>
-                            <p class="projects-text"><strong>tools:</strong> HTML, CSS, JavaScript, Bootstrap, jQuery, SQL, PHP</p>
+                            <p class="projects-text">A program designed to donate electronic devices to rural, low-income areas, focusing on Indigenous reserves</p>
+                            <p class="projects-text"><strong>Tools:</strong> HTML, CSS, JavaScript, Bootstrap, jQuery, SQL, PHP</p>
                         </div>
                     </div>
                 </div>
@@ -279,8 +283,8 @@ functionality:
                                 <a href="https://devpost.com/software/befit-t3igks"> 
                                     <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
                             </div>
-                            <p class="projects-text">conceptualized a social app to encourage users to achieve on their fitness goals by completing daily challenges, and posting to friends</p>
-                            <p class="projects-text"><strong>tools:</strong> Figma, Swift</p>
+                            <p class="projects-text">A social app to encourage users to achieve on their fitness goals by completing daily challenges, and posting to friends</p>
+                            <p class="projects-text"><strong>Tools:</strong> Figma, Swift</p>
                         </div>
                     </div>
                 </div>
@@ -294,12 +298,12 @@ functionality:
                         <div class="projects-fcard">
                             <div class="link-flex-container">
                                 <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
-                                    <h3 class="projects-text">my portfolio</h3></a>
+                                    <h3 class="projects-text">My Portfolio</h3></a>
                                 <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
                                     <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
                             </div>
-                            <p class="projects-text">designed a Figma wireframe of a portfolio to display my projects, emulating Netflix's UI - currently implementing this into code</p>
-                            <p class="projects-text"><strong>tools:</strong> Figma, HTML, CSS, JavaScript</p>
+                            <p class="projects-text">A Figma wireframe of my portfolio to display projects I've worked on, emulating Netflix's UI - currently implementing this into code</p>
+                            <p class="projects-text"><strong>Tools:</strong> Figma, HTML, CSS, JavaScript</p>
                         </div>
                     </div>
                 </div>
@@ -320,8 +324,8 @@ functionality:
                                 <a href="https://github.com/SheHacksDSP"> 
                                     <img class="logo-images" src="./images/link.png" alt="link icon" width="26" height="26"></a>
                             </div>
-                            <p class="projects-text">coordinated with a team to complete challenges in Python, HTML, CSS & machine learning - one of which was launching a responsive and mobile-friendly food review blog</p>
-                            <p class="projects-text"><strong>tools:</strong> Python, HTML, CSS</p>
+                            <p class="projects-text">A series of coding challenges in Python, HTML, CSS & machine learning - one of which was launching a responsive and mobile-friendly food review blog</p>
+                            <p class="projects-text"><strong>Tools:</strong> Python, HTML, CSS</p>
                         </div>
                     </div>
                 </div>
@@ -343,19 +347,19 @@ functionality:
             <div id="contact-me-container">
                 <!-- <img id="contact-bg-img" src="./images/contact-me.png" alt="picture of greece and ocean" width="100%"> -->
 
-                <form id="contact-form" action="./contact-form.php">
-                    <h2>contact me</h2>
+                <form id="contact-form" onsubmit="return false">
+                    <h2>CONTACT ME</h2>
 
                     <label for="fname">full name:</label><br>
-                    <input type="text" placeholder="enter your full name" name="fname"><br><br>
+                    <input type="text" id="fname" name="fname" placeholder="enter your full name" required><br><br>
 
                     <label for="email">email:</label><br>
-                    <input type="email" placeholder="enter your email" name="email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
 
                     <label for="message">message:</label><br>
-                    <input id="contact-message" type="text" placeholder="type message" name="message"><br><br>
+                    <textarea type="text" id="message" name="message" placeholder="type message" required></textarea><br><br>
 
-                    <button id="contact-button" type="submit">send message</button>
+                    <button type="submit" id="contact-button" onclick="submitForm()">send message</button>
                 </form>
             </div>
 
@@ -369,21 +373,67 @@ functionality:
             <div id="footer-logo-flex-container">
                 <a href="https://www.linkedin.com/in/samanthayee6/"> 
                 <div class="l-fcard">
-                    <img class="logo-images" src="./images/linkedin.png" alt="linkedin logo" width="30px"></a>
+                    <img class="logo-images" src="./images/linkedin-tan.png" alt="linkedin logo" width="30px"></a>
                 </div>
 
                 <a href="https://github.com/SamanthaaYee"> 
                 <div class="l-fcard">
-                    <img class="logo-images" src="./images/github.png" alt="github logo" width="30px"></a>
+                    <img class="logo-images" src="./images/github-tan.png" alt="github logo" width="30px"></a>
                 </div>
 
                 <a href="mailto: sayee@uwaterloo.ca"> 
                 <div class="l-card">
-                    <img class="logo-images" src="./images/email.png" alt="email logo" width="30px"></a>
+                    <img class="logo-images" src="./images/email-tan.png" alt="email logo" width="30px"></a>
                 </div>
             </div>
         </footer>
 
     </div>
+
+<!--
+    <h1>Typewriter</h1>
+
+    <button onclick="typeWriter()">Click me</button>
+
+    javascript
+    <script>
+        var i = 0;
+        var txt = 'antha!'; /* The text */
+        var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+            document.getElementById("typing").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+
+    <script>
+        function submitForm() {
+        // Fetch form data
+        var fname = document.getElementById("fname").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Validate form data (you can add more validation as needed)
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill in all fields");
+            return;
+        }
+
+        // Here, you can perform additional validation like checking the email format
+
+        // Simulate form submission (you would replace this with actual form submission logic)
+        alert("Form submitted!\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+
+        // Optionally, you can reset the form after submission
+        document.getElementById("contactForm").reset();
+        }
+    </script>
+
+    -->
 </body>
 </html>
