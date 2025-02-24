@@ -291,6 +291,7 @@ nav a:hover {
 
 #timeline {
     max-width: 1000px;
+    justify-self: center;
 }
 
 .timeline-flex-container {
