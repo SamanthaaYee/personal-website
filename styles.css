@@ -36,9 +36,8 @@ p{
 }
 
 #favicon {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    padding-right: 30rem;
+    font-family: 'DM Serif Display', serif !important; 
+    font-size: 1.5rem !important;
 }
 
 footer {
@@ -75,26 +74,36 @@ button:hover {
 } */
 
 /* nav bar styling */
-nav {
-    position: fixed;
+#nav {
+    position: sticky;
     overflow: hidden;
     background-color: #9EB384;
-    width: 100%;
-    padding: 2rem 8rem 1rem;
+    padding: 1.5rem 8rem 1rem;
+    max-width: 100%;
     top: 0;
     left: 0;
     z-index: 2;
     border-bottom: 1px solid #FAF1E4;
+    list-style-type: none;
 }
 
-nav a {
+#nav li {
+    display: inline;
+    float: left;
+}
+
+#nav a {
     font-size: large;
     font-weight: bold;
     text-decoration: none;
     padding: 2rem 1rem;
 }
 
-nav a:hover {
+#nav-links {
+    float: right;
+}
+
+#nav a:hover {
     /*text-decoration: underline;*/
     text-shadow: 4px 6px 6px rgba(0,0,0,0.24);
 }
@@ -174,7 +183,7 @@ nav a:hover {
 
 .projects-flex-container {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .projects-fcard img {
