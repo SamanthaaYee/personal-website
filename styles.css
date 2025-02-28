@@ -5,6 +5,10 @@
     /*outline: solid 1px red;*/
 }
 
+html {
+    width: fit-content;  
+}
+
 body{
     background-color: #9EB384;
 }
@@ -93,7 +97,7 @@ button:hover {
 }
 
 #nav a {
-    font-size: large;
+    font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     padding: 2rem 1rem;
@@ -115,6 +119,7 @@ button:hover {
 
 .logo-images {
     transition-duration: 0.4s;
+    width: 26px;
 }
 
 .logo-images:hover {
@@ -173,7 +178,8 @@ button:hover {
 
 #logo-flex-container {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    align-items: start;
 }
 
 .about-flex-container {
@@ -233,7 +239,11 @@ button:hover {
     justify-content: center;
 }
 
-/* grid container styling */
+/* skills container styling */
+#skills-container {
+    width: 100%;
+}
+
 #skills-grid-container {
     display: grid;
     grid-template-columns: 7rem 7rem 7rem;
@@ -317,7 +327,7 @@ button:hover {
   }
   
   /* Container around content */
-  .container {
+  .t-container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -325,7 +335,7 @@ button:hover {
   }
   
   /* The circles on the timeline */
-  .container::after {
+  .t-container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -382,7 +392,7 @@ button:hover {
   }
   
   /* The actual content */
-  .content {
+  .t-content {
     padding: 20px 30px;
     background-color: #FAF1E4;
     color:#9EB384;
@@ -390,19 +400,19 @@ button:hover {
     border-radius: 6px;
   }
 
-  .content h3 {
+  .t-content h3 {
     color:#9EB384;
   }
 
-  .content p {
+  .t-content p {
     color:#9EB384;
   }
 
-  .content li {
+  .t-content li {
     color:#9EB384;
   }
 
-  .content strong {
+  .t-content strong {
     color:#9EB384;
   }
 
@@ -623,3 +633,73 @@ textarea {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 } */
+
+/* Mobile CSS */
+@media (max-width: 787px) {
+    p{
+        font-size: 2rem;
+    }
+    
+    #title {
+        font-size: 4rem;
+    }
+    
+    #subtitle {
+        color: #9EB384;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    h2 {
+        font-size: 3rem;
+        border-bottom: #FAF1E4 2px solid;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    .vertical-flex-container {
+        margin: 6rem 4rem 1rem;
+    }
+
+    #home-flex-container {
+        padding: 1rem 2rem;
+    }
+
+    #logo-flex-container {
+        flex-wrap: wrap;
+        align-items: end;
+    }
+
+    .logo-images {
+        width: 42px;
+    }
+
+    .about-flex-container {
+        flex-wrap: wrap;
+    }
+
+    #skills-grid-container {
+        row-gap: 7rem;
+        column-gap: 8rem;
+        justify-content: center;
+    }
+
+    .s-gcard {
+        padding: 110px 80px;
+    }
+
+    .s-gcard p {
+        margin: 10px 20px;
+    }
+    
+    .t-content h3 {
+        font-size: 2rem;
+    }
+
+    .t-content li {
+        font-size: 1.5rem;
+    }
+}
