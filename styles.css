@@ -380,7 +380,7 @@ button:hover {
     top: 22px;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 31px;
     border: medium solid #FAF1E4;
     border-width: 10px 10px 10px 0;
     border-color: transparent #FAF1E4 transparent transparent;
@@ -398,6 +398,7 @@ button:hover {
     color:#9EB384;
     position: relative;
     border-radius: 6px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
   }
 
   .t-content h3 {
@@ -414,6 +415,10 @@ button:hover {
 
   .t-content strong {
     color:#9EB384;
+  }
+
+  .t-content:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 50px 0 rgba(0,0,0,0.19);
   }
 
 /*#timeline {
