@@ -11,6 +11,7 @@ html {
 
 body{
     background-color: #9EB384;
+    margin: 0;
 }
 
 h1 {
@@ -33,6 +34,7 @@ p{
     color: #9EB384;
     font-size: 1rem;
     font-weight: lighter;
+    width: 75%;
 }
 
 #profile-pic {
@@ -168,6 +170,29 @@ button:hover {
     border-radius: 10px;
 }
 
+#cherry-blossom {
+    height: 0;
+}
+
+#cherry-blossom img {
+    z-index: 1;
+    width: 20rem;
+    position: relative
+}
+
+#cherry-blossom-1 {
+    top: -300px;
+    left: -140px;
+    float: left;
+}
+
+#cherry-blossom-2 {
+    top: -525px;
+    right: -129px;
+    rotate: 180deg;
+    float: right;
+}
+
 .logo-images {
     transition-duration: 0.4s;
     width: 26px;
@@ -208,7 +233,7 @@ button:hover {
 .vertical-flex-container {
     display: flex;
     flex-direction: column;
-    margin: 6rem 8rem 1rem;
+    margin: 2rem 8rem 1rem;
 }
 
 .v-fcard {
@@ -227,6 +252,10 @@ button:hover {
     padding: 1rem;
 }
 
+.home-text {
+    width: 30%;
+}
+
 #logo-flex-container {
     display: flex;
     gap: 1rem;
@@ -243,10 +272,10 @@ button:hover {
     gap: 2rem;
 }
 
-.projects-fcard img {
+.projects-banner, .projects-img {
     margin-left: 1rem;
     margin-top: 1.7rem;
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 .projects-fcard .projects-img:hover {
@@ -335,7 +364,7 @@ button:hover {
 
 .projects-gcard {
     background-color: #FAF1E4;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
 }
 
@@ -350,6 +379,7 @@ button:hover {
     font-size: 1rem;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .all-projects button:hover {
@@ -417,7 +447,7 @@ button:hover {
     top: 22px;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: 31px;
     border: medium solid #FAF1E4;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #FAF1E4;
@@ -448,7 +478,7 @@ button:hover {
     background-color: #FAF1E4;
     color:#9EB384;
     position: relative;
-    border-radius: 6px;
+    border-radius: 10px;
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
   }
 
@@ -711,6 +741,10 @@ textarea {
         border-bottom: #FAF1E4 2px solid;
     }
 
+    h3 {
+        font-size: 2rem;
+    }
+
     button {
         font-size: 1.5rem;
         padding: 10px;
@@ -748,31 +782,55 @@ textarea {
         font-family: 'DM Serif Display', serif !important; 
         font-size: 3rem !important;
     } 
-    
+
+    /* home section*/
+    .home-text {
+        width: 100%;
+    }
+
+    #cherry-blossom-1 {
+        top: -1150px;
+        left: -66px;
+    }
+
+    #cherry-blossom-2 {
+        top: -1100px;
+        right: -66px;
+    }
+
     .vertical-flex-container {
         margin: 2rem 4rem 1rem;
     }
 
     #home-flex-container {
         padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #subtitle {
+        width: 100%;
     }
 
     #logo-flex-container {
         flex-wrap: wrap;
         align-items: end;
+        margin-bottom: 10px;
     }
 
     .logo-images {
         width: 42px;
     }
 
+    /* about me section */
     .about-flex-container {
         flex-wrap: wrap;
     }
 
     #skills-grid-container {
         row-gap: 7rem;
-        column-gap: 8rem;
+        column-gap: 5rem;
         justify-content: center;
     }
 
@@ -784,11 +842,50 @@ textarea {
         margin: 10px 20px;
     }
     
-    .t-content h3 {
+    /* timeline section */
+    .t-content li {
+        font-size: 1.5rem;
+    }
+
+    /* projects section */
+    .projects-fcard p {
         font-size: 2rem;
     }
 
-    .t-content li {
-        font-size: 1.5rem;
+    .all-projects button {
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-flex-container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .link-flex-container {
+        align-items: end;
+    }
+
+    .img-stack {
+        grid-template-columns: 0fr;
+    }
+
+    .projects-banner, .projects-img {
+        margin: 0;
+    }
+
+    .projects-banner {
+        width: 10rem;
+    }
+
+    .projects-img {
+        width: 30rem;
     }
 }

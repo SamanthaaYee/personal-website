@@ -1,8 +1,8 @@
 <!-- personal comments:
 - make mobile responsive
-- visual dividers between sections? (i.e. ariyas)
 - MORE PERSONALITY!!!
 - finish new updates (experiences, projects etc.)
+- look at font on mobile????
 
 functionality:
 - js type out name
@@ -50,18 +50,19 @@ functionality:
             <i class="fa fa-bars"></i>
         </a>
     </ul>-->
-
-    <div id="nav">
-        <a id="favicon" href= "#">S</a>
-        <div id="nav-links">
-            <a class="non-home" href= "#about-me">ABOUT ME</a>
-            <a class="non-home" href= "#my-experiences">MY EXPERIENCES</a>
-            <a class="non-home" href= "#projects">PROJECTS</a>
-            <a class="non-home" href= "#contact-me">CONTACT ME</a>
+    <div id="nav-container">
+        <div id="nav">
+            <a id="favicon" href= "#">S</a>
+            <div id="nav-links">
+                <a class="non-home" href= "#about-me">ABOUT ME</a>
+                <a class="non-home" href= "#my-experiences">MY EXPERIENCES</a>
+                <a class="non-home" href= "#projects">PROJECTS</a>
+                <a class="non-home" href= "#contact-me">CONTACT ME</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="navBar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="navBar()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
 
     <div class="vertical-flex-container">
@@ -72,16 +73,16 @@ functionality:
                 <img id="profile-pic" src="./images/profile-picture.jpg" alt="profile picture" width="400px">
             </div>
 
-            <div class="h-fcard">
+            <div class="h-fcard home-text">
                 <h1 id="title">hi, <br>i'm samantha!<span class="typewriter"></span></h1> 
-                <p id="subtitle">3A systems design engineering student at the<br>University of Waterloo - welcome to my website :)</p>
+                <p id="subtitle">3A systems design engineering student at the University of Waterloo - welcome to my website :)</p>
 
                 <br>
 
                 <!-- links -->
                 <div id="logo-flex-container">
                     <div class="l-fcard resume-button">
-                        <a href="https://drive.google.com/file/d/1_8fk7XjzaVW6GIA0-fot2P0bPccVXAPM/view?usp=drive_link"> <button> check out my resume </button></a>
+                        <a href="https://drive.google.com/file/d/1_8fk7XjzaVW6GIA0-fot2P0bPccVXAPM/view?usp=sharing"> <button> check out my resume </button></a>
                     </div>
                     
                     <div class="l-fcard">
@@ -97,6 +98,11 @@ functionality:
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div id="cherry-blossom">
+            <img id="cherry-blossom-1" src="./images/cherry-blossom.png" alt="cherry blossoms">
+            <img id="cherry-blossom-2" src="./images/cherry-blossom.png" alt="cherry blossoms">
         </div>
 
         <!-- about me -->
