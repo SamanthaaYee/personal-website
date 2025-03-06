@@ -1,6 +1,7 @@
 /* page formatting */
 * {
     font-family: 'Mukta', sans-serif;
+    /*font-family: "Figtree", sans-serif;*/
     color: #FAF1E4;
     /*outline: solid 1px red;*/
 }
@@ -20,6 +21,13 @@ h1 {
 
 h2 {
     border-bottom: #FAF1E4 1px solid;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
 }
 
 p{
@@ -28,12 +36,13 @@ p{
 
 #title {
     font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
 }
 
 #subtitle {
     color: #9EB384;
     font-size: 1rem;
-    font-weight: lighter;
     width: 75%;
 }
 
@@ -87,6 +96,9 @@ button:hover {
         z-index: 2;
         border-bottom: 1px solid #FAF1E4;
         list-style-type: none;
+        display: flex;
+        align-items: center;
+
     }
 
     #nav-links {
@@ -95,16 +107,14 @@ button:hover {
     }
 
     #nav a {
-        font-size: 1.1rem;
-        font-weight: bold;
+        font-family: 'DM Serif Display', serif;
         text-decoration: none;
-        padding: 2rem 1rem;
-        display: inline-block !important;
+        display: inline-block;
     }
 
     #nav-links a {
-        font-size: 1.1rem;
-        padding: 2rem 1rem;
+        font-size: 1.2rem;
+        padding: 1rem 0rem 1rem 2rem;
     }
 
     #nav a:hover {
@@ -117,17 +127,12 @@ button:hover {
     }
 
     #favicon {
-        font-family: 'DM Serif Display', serif !important; 
-        font-size: 1.5rem !important;
+        /*font-family: 'DM Serif Display', serif !important; */
+        font-family: "Fleur De Leah", cursive !important;
+        font-weight: normal;
+        font-size: 3rem;
+        flex: 2;
     } 
-    
-    #nav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1.1rem;
-        display: block;
-    }
     
     #nav a.icon {
         display: none;
@@ -237,7 +242,7 @@ button:hover {
 }
 
 .v-fcard {
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 #home-flex-container {
@@ -283,7 +288,6 @@ button:hover {
 }
 
 .projects-fcard p {
-    font-weight: lighter;
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     margin-top: 0;
@@ -733,7 +737,6 @@ textarea {
     #subtitle {
         color: #9EB384;
         font-size: 2rem;
-        font-weight: lighter;
     }
 
     h2 {
@@ -758,16 +761,20 @@ textarea {
         border-bottom: 2px solid #FAF1E4;
     }
       
-    #nav #nav-links {
+    #nav-links {
         display: none;
+    }
+
+    #nav-links a {
+        font-size: 2rem;
     }
       
     #nav a {
         color: #FAF1E4;
         padding: 1.5rem 8rem 1rem;
         text-decoration: none;
-        font-size: 2rem;
         display: block;
+        font-family: 'DM Serif Display', serif;
     }
       
     #nav a.icon {
@@ -775,13 +782,17 @@ textarea {
         position: absolute;
         right: 0;
         top: 0;
-        font-size: 3rem;
+        font-size: 6rem;
     }
     
     #favicon {
-        font-family: 'DM Serif Display', serif !important; 
-        font-size: 3rem !important;
+        font-family: "Fleur De Leah", cursive !important;
+        font-size: 6rem;
     } 
+
+    .fa.fa-bars {
+        font-size: 3rem;
+    }
 
     /* home section*/
     .home-text {
@@ -800,6 +811,10 @@ textarea {
 
     .vertical-flex-container {
         margin: 2rem 4rem 1rem;
+    }
+
+    .v-fcard {
+        padding-top: 3rem;
     }
 
     #home-flex-container {
@@ -826,12 +841,12 @@ textarea {
     /* about me section */
     .about-flex-container {
         flex-wrap: wrap;
+        gap: 0rem;
     }
 
     #skills-grid-container {
         row-gap: 7rem;
         column-gap: 5rem;
-        justify-content: center;
     }
 
     .s-gcard {
@@ -843,6 +858,10 @@ textarea {
     }
     
     /* timeline section */
+    #my-experiences {
+        padding-top: 6rem;
+    }
+    
     .t-content li {
         font-size: 1.5rem;
     }
@@ -887,5 +906,27 @@ textarea {
 
     .projects-img {
         width: 30rem;
+    }
+
+    /* footer mobile */
+    label {
+        font-size: 2rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+    }
+
+    input[type=text], [type=email], textarea {
+        height: 2rem;
+    }
+
+    #contact-me {
+        padding-top: 6rem;
+    }
+
+    #contact-form {
+        margin-top: 1rem;
+        margin-right: 2rem;
     }
 }
