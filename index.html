@@ -3,9 +3,9 @@
 - finish new updates (experiences, projects etc.)
 - make new flower font the first of every paragraph? or something in background
 - make timeline more interesting? a cherry blossom tree or something? idk figma it
+- make second line of timeline (location, when) smaller - use subtitle css?
 
 mobile responsive:
-- make timeline responsive - vertical centered containers w/ line down middle?
 - create a second breakpoint (middle) for fonts mostly -> 480px, 787px
 - fix spacing before timeline (skills card layout idk)
 
@@ -103,8 +103,8 @@ functionality:
         </div>
         
         <div id="cherry-blossom">
-            <img id="cherry-blossom-1" src="./images/cherry-blossom.png" alt="cherry blossoms">
-            <img id="cherry-blossom-2" src="./images/cherry-blossom.png" alt="cherry blossoms">
+            <img id="cherry-blossom-1" src="./images/cherry-blossom.png" alt="cherry blossom branch">
+            <img id="cherry-blossom-2" src="./images/cherry-blossom.png" alt="cherry blossoms branch">
         </div>
 
         <!-- about me -->
@@ -171,6 +171,19 @@ functionality:
             <h2 id="experiences-heading">MY EXPERIENCES</h2>
             
             <div id="timeline">
+                <div class="h-tcard">
+                    <div class="t-container right">
+                        <div class="t-content">
+                            <h3>Web Developer @ Apricotton <br> Jan-Apr 2025 | Hybrid, Toronto, ON </h3>
+                            <ul class="timeline-description">
+                            <!-- <li>Developed a new company website using <strong>WordPress</strong>, ensuring seamless integration of design elements to enhance functionality, <strong>increasing website traffic by 150%</strong> and <strong>user engagement by 60%</strong> compared to previous methods</li>
+                                <li>Prototyped the website in <strong>Figma</strong>, including designing a comprehensive design system for a cohesive user experience</li>-->
+                            </ul>
+                            <p><strong>Tools:</strong> Shopify, Liquid, HTML, CSS, JavaScript</p>  
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="t-container left">
                     <div class="t-content">
                         <h3>UX Designer @ Solaire Canada Solar <br> Jun-Aug 2024 | Remote </h3>
@@ -181,6 +194,7 @@ functionality:
                         <p><strong>Tools:</strong> Figma, WordPress, Canva</p>  
                     </div>
                 </div>
+
                 <div class="t-container right">
                     <div class="t-content">
                         <h3>UI/UX Designer @ Health Canada <br> Oct-Dec 2023 | Remote </h3>
@@ -191,9 +205,10 @@ functionality:
                         <p><strong>Tools:</strong> Figma, Canva, UserZoom</p>                    
                     </div>
                 </div>
+
                 <div class="t-container left">
                     <div class="t-content">
-                        <h3>Software Engineer @ Health & Rehab Research inc. <br> Jan-Mar 2023 | Remote </h3>
+                        <h3>Software Engineer @ Health & Rehab Research Inc. <br> Jan-Mar 2023 | Remote </h3>
                         <ul class="timeline-description">
                             <li>Trained a multivariable machine learning classification model to an <strong>accuracy of 78%</strong>, which detects the risk of cardiovascular disease based on an individual’s data, built to aid the development of a mobile app</li>
                             <li>Leveraged high-level, Object Oriented Programming techniques in <strong>Python</strong> to combine and manipulate time-series datasets  spanning over <strong>4.6 million values</strong>, such as iterative imputation and utilized <strong>Google Colab</strong> & <strong>Git</strong> to collaborate with teammates</li>
@@ -201,6 +216,7 @@ functionality:
                         <p><strong>Tools:</strong> Python, Git, Google Colab, MS Excel</p>
                     </div>
                 </div>
+
                 <div class="t-container right">
                     <div class="t-content">
                         <h3>Code Instructor @ Code Ninjas <br> Jun 2021 - Aug 2022 | Oakville, ON </h3>
@@ -211,6 +227,7 @@ functionality:
                         <p><strong>Tools:</strong> JavaScript, Node.js, LEGO robotics</p>
                     </div>
                 </div>
+
                 <div class="t-container left">
                     <div class="t-content">
                         <h3>Assistant Teacher @ Spirit of Math Schools <br> Sept 2019 - Jun 2022 | Mississauga, ON </h3>
@@ -416,13 +433,13 @@ functionality:
                     <h2>CONTACT ME</h2>
 
                     <label for="fname">full name:</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="enter your full name" required><br><br>
+                    <input type="text" id="fname" name="fname" placeholder="enter your full name" required>
 
                     <label for="email">email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
+                    <input type="email" id="email" name="email" placeholder="enter your email" required>
 
                     <label for="message">message:</label><br>
-                    <textarea type="text" id="message" name="message" placeholder="type message" required></textarea><br><br>
+                    <textarea type="text" id="message" name="message" placeholder="type message" required></textarea>
 
                     <button type="submit" id="contact-button" onclick="submitForm()">send message</button>
                 </form>
