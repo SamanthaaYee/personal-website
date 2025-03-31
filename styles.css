@@ -7,6 +7,8 @@
 }
 
 html {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;  
 }
 
@@ -34,11 +36,44 @@ p{
     font-size: 1.1rem;
 }
 
-#title {
+.title {
     font-size: 3rem;
     font-family: 'DM Serif Display', serif;
     font-weight: 100;
 }
+
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .12em solid #9EB384; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.typewriter-container {
+    width: max-content;
+}
+
+.non-typewriter {
+    margin-bottom: 0;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9EB384; }
+}
+
+
 
 .subtitle {
     color: #9EB384;
@@ -87,6 +122,7 @@ button:hover {
 /* nav bar styling */
 @media (min-width: 787px) {
     #nav {
+        position: -webkit-sticky;
         position: sticky;
         overflow: hidden;
         background-color: #9EB384;
@@ -356,7 +392,8 @@ button:hover {
     grid-template-columns: 7rem 7rem 7rem;
     grid-template-rows: 10rem 10rem;
     row-gap: 2rem;
-    column-gap: 3rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
 }
 
 .s-gcard {
@@ -386,7 +423,8 @@ button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 3rem;
     row-gap: 1.5rem;
-    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
 }
 
 .projects-gcard {
@@ -748,6 +786,22 @@ textarea {
     color: #FAF1E4;
 }
 
+::-webkit-input-placeholder {
+    color: lightgray;
+}
+
+::-moz-placeholder {
+    color: lightgray;
+}
+
+:-ms-input-placeholder {
+    color: lightgray;
+}
+
+::-ms-input-placeholder {
+    color: lightgray;
+}
+
 ::placeholder {
     color: lightgray;
 }
@@ -770,7 +824,7 @@ textarea {
         font-size: 1.1rem;
     }
     
-    #title {
+    .title {
         font-size: 3rem;
         margin-bottom: 0;
     }
@@ -799,8 +853,12 @@ textarea {
     #nav {
         overflow: hidden;
         background-color: #9EB384;
-        position: relative;
+        /*position: relative;*/
         border-bottom: 2px solid #FAF1E4;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
       
     #nav-links {
@@ -1015,7 +1073,7 @@ textarea {
         font-size: 1.5rem;
     }
     
-    #title {
+    .title {
         font-size: 4rem;
         margin-bottom: 0;
     }
@@ -1045,8 +1103,12 @@ textarea {
     #nav {
         overflow: hidden;
         background-color: #9EB384;
-        position: relative;
+        /*position: relative;*/
         border-bottom: 2px solid #FAF1E4;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
     }
       
     #nav-links {
