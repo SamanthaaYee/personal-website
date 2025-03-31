@@ -8,11 +8,14 @@
     });
 }); */
 
-function navBar() {
-    var x = document.getElementById("nav-links");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+function navBar(x) {
+    var y = document.getElementById("nav-links");
+
+    x.classList.toggle("change");
+
+    if (y.style.display === "block") {
+      y.style.display = "none";
     } else {
-      x.style.display = "block";
+      y.style.display = "block";
     }
   }
