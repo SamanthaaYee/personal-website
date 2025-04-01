@@ -1178,6 +1178,7 @@ textarea {
 
     input[type=text], [type=email], textarea {
         height: 1rem;
+        width: 80%;
     }
 
     #contact-me {
@@ -1186,7 +1187,8 @@ textarea {
 
     #contact-form {
         /*margin-right: 2rem;*/
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
+        /*1rem 1rem 1rem 2rem;*/
         right: auto;
         margin: 0;
     }
