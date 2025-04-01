@@ -1187,8 +1187,8 @@ textarea {
 
     #contact-form {
         /*margin-right: 2rem;*/
-        padding: 1rem 2rem;
-        /*1rem 1rem 1rem 2rem;*/
+        /*padding: 1rem 2rem;*/
+        padding: 1rem 1rem 1rem 2rem;
         right: auto;
         margin: 0;
     }
