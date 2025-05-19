@@ -1,5 +1,4 @@
 <!-- personal comments:
- - write apricotton points (once resume done)
 
 functionality:
 - animated js (cherry blossoms falling on headers?): https://www.reddit.com/r/reactjs/comments/o6oxrr/how_do_create_this_sparkle_text_effect_from_josh/ 
@@ -25,23 +24,20 @@ functionality:
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- javascript -->
-    <script src="./contact_form.js"></script>
-    <script src="./nav.js"></script>
-
 </head>
 
 <body>
     <div id="nav">
-        <a id="favicon" href= "#">S</a>
-        <div id="nav-links">
-            <a class="non-home" href= "#about-me">ABOUT ME</a>
-            <a class="non-home" href= "#my-experiences">MY EXPERIENCES</a>
-            <a class="non-home" href= "#projects">PROJECTS</a>
-            <a class="non-home" href= "#contact-me">CONTACT ME</a>
+        <div id="favicon-container">
+            <a id="favicon" href= "#">S</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="navBar(this)">
+        <div id="nav-links">
+            <a class="non-home" href= "#about-me">about</a>
+            <a class="non-home" href= "#my-experiences">experiences</a>
+            <a class="non-home" href= "#projects">projects</a>
+            <a class="non-home" href= "#contact-me">contact</a>
+        </div>
+        <a id="nav-toggle" href="javascript:void(0);" onclick="toggleNav(this)">
             <!-- <i class="fa fa-bars"></i> -->
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -52,7 +48,7 @@ functionality:
     <div class="vertical-flex-container">
 
         <!-- homepage -->
-        <div id="home-flex-container" class="v-fcard">
+        <div id="home-flex-container" class="v-fcard anchor">
             <div class="h-fcard">
                 <img id="profile-pic" src="./images/profile-picture.jpg" alt="profile picture" width="400px">
             </div>
@@ -64,14 +60,18 @@ functionality:
 
                     <!--<h1 id="title" class="typewriter">hi,<br>i'm samantha!</h1>-->
                 </div>
-                <p class="subtitle">3A Systems Design Engineering student at the University of Waterloo - welcome to my website :)</p>
+                <p class="subtitle"><span class="callout-font">Systems Design Engineering</span> student @ <span class="callout-font">UWaterloo</span> - welcome to my website :)</p>
 
                 <br>
 
                 <!-- links -->
                 <div id="logo-flex-container">
                     <div class="l-fcard resume-button">
-                        <a href="https://drive.google.com/file/d/1_8fk7XjzaVW6GIA0-fot2P0bPccVXAPM/view?usp=sharing"> <button> check out my resume </button></a>
+                        <a href="https://drive.google.com/file/d/1L2s-bmF5wPp1uscyd4c3P9T4V9A65ov9/view?usp=drive_link"> <button>check out my resume!</button></a>
+                    </div>
+
+                    <div class="l-card">
+                        <a href="mailto: sayee@uwaterloo.ca"><img class="logo-images" src="./images/email.png" alt="email logo"></a>
                     </div>
                     
                     <div class="l-fcard">
@@ -82,9 +82,6 @@ functionality:
                         <a href="https://github.com/SamanthaaYee"><img class="logo-images" src="./images/github.png" alt="github logo"></a>
                     </div>
 
-                    <div class="l-card">
-                        <a href="mailto: sayee@uwaterloo.ca"></a><img class="logo-images" src="./images/email.png" alt="email logo"></a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -97,23 +94,30 @@ functionality:
         </div>
 
         <!-- about me -->
-        <div id="about-me" class="v-fcard">
+        <div id="about-me" class="v-fcard anchor">
             <div class="about-flex-container">
                 <!-- about -->
                 <div class="a-fcard">
-                    <h2>ABOUT</h2>
+                    <h2>about</h2>
                     <p> 
-                        Hi! My name is Samantha Yee and I'm in my second year at the University of Waterloo studying Systems Design Engineering! <br><br>
-                            <strong>“What even is Systems Design Engineering?”</strong> - a question I asked myself when applying. <br><br>
-                            To me, SYDE allows me to explore two key ideas: <strong>systems</strong> that help us learn about the world, and <strong>design</strong> that allows us to change it. This combination drives me to approach problems with a holistic view, always seeking creative and practical ways to improve user experiences through thoughtful, well-designed solutions.<br><br>
-                            I'm currently working as a <strong>Web Developer</strong> at Apricotton and I've had three previous co-ops as a <strong>UI/UX Designer</strong> and a <strong>Software Engineer.</strong><br><br>
-                            I’m always seeking the perfect mix of innovation, curiosity, and a little fun in my work. Feel free to reach out - <strong>I’d love to connect!</strong>
+                        Hi! My name is Samantha Yee and I'm in my third year at the University of Waterloo studying Systems Design Engineering! <br><br>
+                        <i><span class="callout-font xx-large">“<span class="flower-font xxx-large">W</span>hat even is Systems Design Engineering?”</span><br>
+                        - A question I asked myself when applying. </i><br><br>
+                        To me, SYDE allows me to explore two key ideas:
+                    </p>
+                    <ol>
+                        <li><i><span class="callout-font larger">systems</span></i> that help us learn about the world</li>
+                        <li><i><span class="callout-font larger">design</span></i> that allows us to change it</li>
+                    </ol>
+                    <p>
+                        This intersection fuels my passion for tackling problems from a human-centered perspective, always aiming to find innovation, curiosity (and fun!) in my work.<br><br>
+                        I'm currently looking for Fall 2025 and Summer 2026 internships in development or design, let's make something cool together! :) <br><br>
                     </p>
                 </div>
                 
                 <!-- skills -->
                 <div id="skills-container" class="a-fcard">
-                    <h2>SKILLS</h2>
+                    <h2>skills</h2>
                     <div id="skills-grid-container">
                         <!-- HTML block -->
                         <div class="s-gcard">
@@ -156,80 +160,74 @@ functionality:
         </div>
         
         <!-- my experiences -->
-        <div id="my-experiences" class="v-fcard">
-            <h2 id="experiences-heading">MY EXPERIENCES</h2>
+        <div id="my-experiences" class="v-fcard anchor">
+            <h2 id="experiences-heading">experiences</h2>
             
             <div id="timeline">
                 <div class="t-container right">
                     <div class="t-content">
-                        <h3>Web Developer @ Apricotton <br><span class="subtitle timeline-details">Jan-Apr 2025 | Hybrid, Toronto, ON</span></h3>
-                        <ul class="timeline-description">
-                        <!-- <li>Developed a new company website using <strong>WordPress</strong>, ensuring seamless integration of design elements to enhance functionality, <strong>increasing website traffic by 150%</strong> and <strong>user engagement by 60%</strong> compared to previous methods</li>
-                            <li>Prototyped the website in <strong>Figma</strong>, including designing a comprehensive design system for a cohesive user experience</li>-->
-                        </ul>
-                        <p><strong>Tools:</strong> Shopify, Liquid, HTML, CSS, JavaScript, Figma, Canva, Git</p>  
+                        <h3>Front-End Developer @ Apricotton <br><span class="subtitle timeline-details">Jan-Apr 2025 | Toronto, ON</span></h3>
+                        <div class="tools">
+                            <mark>Liquid (Shopify)</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
+                            <mark>Figma</mark>
+                            <mark>Canva</mark>
+                            <mark>Git</mark>
+                        </div>
+                        <p class="t-descriptions">Built responsive, high-converting Shopify storefront features, increasing purchase rate by 128% and boosting daily traffic by 329%</p>
+                        <!--<p><strong>Tools:</strong> Shopify, Liquid, HTML, CSS, JavaScript, Figma, Canva, Git</p>--> 
                     </div>
                 </div>
                 
                 <div class="t-container left">
                     <div class="t-content">
                         <h3>UX Designer @ Solaire Canada Solar <br><span class="subtitle timeline-details">Jun-Aug 2024 | Remote</span></h3>
-                        <ul class="timeline-description">
-                            <li>Developed a new company website using <strong>WordPress</strong>, ensuring seamless integration of design elements to enhance functionality, <strong>increasing website traffic by 150%</strong> and <strong>user engagement by 60%</strong> compared to previous methods</li>
-                            <li>Prototyped the website in <strong>Figma</strong>, including designing a comprehensive design system for a cohesive user experience</li>
-                        </ul>
-                        <p><strong>Tools:</strong> Figma, WordPress, Canva</p>  
+                        <div class="tools">
+                            <mark>Figma</mark>
+                            <mark>WordPress</mark>
+                            <mark>Canva</mark>
+                        </div>
+                        <p class="t-descriptions">Designed and launched a responsive website and brand system from scratch, increasing traffic by 154% and boosting user engagement by 61%</p>
+                        <!--<p><strong>Tools:</strong> Figma, WordPress, Canva</p>-->
                     </div>
                 </div>
 
                 <div class="t-container right">
                     <div class="t-content">
                         <h3>UI/UX Designer @ Health Canada<br><span class="subtitle timeline-details">Oct-Dec 2023 | Remote</span></h3>
-                        <ul class="timeline-description">
-                            <li>Spearheaded the redesign of Canada’s Food Guide dashboard - viewed by <strong>9.7+ million annually</strong> - by conducting heuristic evaluations, usability tests on Userzoom, and creating a prototype in <strong>Figma</strong>, resulting in a <strong>40% increase in average session duration</strong></li>
-                            <li>Conceived design solutions for various Canada.ca pages in <strong>Figma</strong> and <strong>Canva</strong>, following WCAG and Canada style guides</li>
-                        </ul>
-                        <p><strong>Tools:</strong> Figma, Canva, UserZoom</p>                    
+                        <div class="tools">
+                            <mark>Figma</mark>
+                            <mark>Canva</mark>
+                            <mark>UserZoom</mark>
+                            <mark>Jia (Atlassian)</mark>
+                        </div>
+                        <p class="t-descriptions">Redesigned Canada's Food Guide dashboard via usability testing, heuristic reviews, and Figma prototyping to improve accessibility for 9.7M+ users</p>
+                        <!--<p><strong>Tools:</strong> Figma, Canva, UserZoom</p>-->                
                     </div>
                 </div>
 
                 <div class="t-container left">
                     <div class="t-content">
                         <h3>Software Engineer @ Health & Rehab Research Inc.<br><span class="subtitle timeline-details">Jan-Mar 2023 | Remote</span></h3>
-                        <ul class="timeline-description">
-                            <li>Trained a multivariable machine learning classification model to an <strong>accuracy of 78%</strong>, which detects the risk of cardiovascular disease based on an individual’s data, built to aid the development of a mobile app</li>
-                            <li>Leveraged high-level, Object Oriented Programming techniques in <strong>Python</strong> to combine and manipulate time-series datasets  spanning over <strong>4.6 million values</strong>, such as iterative imputation and utilized <strong>Google Colab</strong> & <strong>Git</strong> to collaborate with teammates</li>
-                        </ul>
-                        <p><strong>Tools:</strong> Python, Git, Google Colab, MS Excel</p>
-                    </div>
-                </div>
-
-                <div class="t-container right">
-                    <div class="t-content">
-                        <h3>Code Instructor @ Code Ninjas<br><span class="subtitle timeline-details">Jun 2021 - Aug 2022 | Oakville, ON</span></h3>
-                        <ul class="timeline-description">
-                            <li>Taught the fundamentals of programming in JavaScript, Node.js and Scratch to <strong>over 500 students</strong> through the design and development of games</li>
-                            <li>Encouraged creativity and problem-solving skills in kids ages 5-14 through game creation in Roblox and Minecraft and programming LEGO robots using SPIKE Prime</li>
-                        </ul>
-                        <p><strong>Tools:</strong> JavaScript, Node.js, LEGO robotics</p>
-                    </div>
-                </div>
-
-                <div class="t-container left">
-                    <div class="t-content">
-                        <h3>Assistant Teacher @ Spirit of Math Schools<br><span class="subtitle timeline-details">Sept 2019 - Jun 2022 | Mississauga, ON</span></h3>
-                        <ul class="timeline-description">
-                            <li>Worked closely with students in grades 3-6 to teach them advanced mathematical problems, which significantly improved their academic performances</li>
-                            <li>Coached, organised and prepared lessons for groups of <strong>up to 40 pupils </strong>per class</li>
-                        </ul>
+                        <div class="tools">
+                            <mark>Python</mark>
+                            <mark>Git</mark>
+                            <mark>Google Colab</mark>
+                            <mark>MS Excel</mark>
+                        </div>
+                        <p class="t-descriptions">Built a Python-based machine learning model (78% accuracy) to assess cardiovascular risk, working with 4.6M+ data points and time-series imputation techniques</p>
+                        <!--<p><strong>Tools:</strong> Python, Git, Google Colab, MS Excel</p>-->
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- projects -->
-        <div id="projects" class="v-fcard">
-            <h2>PROJECTS</h2>
+        <div id="projects" class="v-fcard anchor">
+            <h2>projects</h2>
+
             <div id="projects-grid-container">
                 
                 <!-- Loveboxd card -->
@@ -244,8 +242,11 @@ functionality:
                             <a href="https://www.figma.com/proto/WKxXCwUxTuh2J5tKIOsnCI/Loveboxd---Your-Real-Life-Meet-Cute?page-id=0%3A1&node-id=142-318&node-type=canvas&viewport=-763%2C372%2C0.41&t=zVtlrNjVXzsw2goh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=142%3A318"> 
                                 <img class="logo-images link-icon" src="./images/link.png" alt="link icon"></a>
                         </div>
+                        <div class="tools">
+                            <mark>Figma</mark>
+                        </div>
                         <p class="projects-text">Conceptualized a dating app that integrates a user’s Letterboxd movie preferences to recommend matches, created a responsive prototype in Figma with a cohesive design system</p>
-                        <p class="projects-text"><strong>Tools:</strong> Figma</p>
+                        <!--<p class="projects-text"><strong>Tools:</strong> Figma</p>-->
                     </div>
                 </div>
                 
@@ -253,10 +254,9 @@ functionality:
                 <div class="projects-gcard projects-flex-container">
                         <div class="projects-fcard">
                             <div class="img-stack">
-                                <img class="projects-banner" src="./images/1st-place.svg" alt="1st place winner banner">
+                                <img class="projects-banner" src="./images/1st-place.png" alt="1st place winner banner">
                                 <img class="projects-img" src="./images/connectivit.png" alt="screenshot from connectivIT website" width="275px">
                             </div>
-                            <!-- <p class="badge">1st place in Technova</p> -->
                         </div>
                         <div class="projects-fcard">
                             <div class="link-flex-container">
@@ -265,27 +265,42 @@ functionality:
                                 <a href="https://devpost.com/software/connectivit?ref_content=my-projects-tab&ref_feature=my_projects"> 
                                     <img class="logo-images link-icon" src="./images/link.png" alt="link icon"></a>
                             </div>
+                            <!--<p class="badge"><i>🥇1st place in Technova</i></p>-->
+                            <div class="tools">
+                                <mark>HTML</mark>
+                                <mark>CSS</mark>
+                                <mark>JavaScript</mark>
+                                <mark>Bootstrap</mark>
+                                <mark>jQuery</mark>
+                                <mark>SQL</mark>
+                                <mark>PHP</mark>
+                            </div>
                             <p class="projects-text">A program designed to donate electronic devices to rural, low-income areas, focusing on Indigenous reserves</p>
-                            <p class="projects-text"><strong>Tools:</strong> HTML, CSS, JavaScript, Bootstrap, jQuery, SQL, PHP</p>
+                            <!--<p class="projects-text"><strong>Tools:</strong> HTML, CSS, JavaScript, Bootstrap, jQuery, SQL, PHP</p>-->
+                            
                         </div>
                 </div>
 
                 <!-- Netflix card -->
-                <div class="projects-gcard">
-                    <div class="projects-flex-container">
-                        <div class="projects-fcard">
-                            <img class="projects-img" src="./images/flix.png" alt="pictures of Netflix portfolio Figma wireframe" width="275px">
+                <div class="projects-gcard projects-flex-container">
+                    <div class="projects-fcard">
+                        <img class="projects-img" src="./images/flix.png" alt="pictures of Netflix portfolio Figma wireframe" width="275px">
+                    </div>
+                    <div class="projects-fcard">
+                        <div class="link-flex-container">
+                            <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
+                                <h3 class="projects-text">My Portfolio</h3></a>
+                            <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
+                                <img class="logo-images link-icon" src="./images/link.png" alt="link icon"></a>
                         </div>
-                        <div class="projects-fcard">
-                            <div class="link-flex-container">
-                                <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
-                                    <h3 class="projects-text">My Portfolio</h3></a>
-                                <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Netflix-Portfolio-Wireframe?type=design&node-id=1-2&t=CCj3fw4xeXv5Tw3y-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design"> 
-                                    <img class="logo-images link-icon" src="./images/link.png" alt="link icon"></a>
-                            </div>
-                            <p class="projects-text">A Figma wireframe of my portfolio to display projects I've worked on, emulating Netflix's UI - currently implementing this into code</p>
-                            <p class="projects-text"><strong>Tools:</strong> Figma, HTML, CSS, JavaScript</p>
+                        <div class="tools">
+                            <mark>Figma</mark>
+                            <mark>HTML</mark>
+                            <mark>CSS</mark>
+                            <mark>JavaScript</mark>
                         </div>
+                        <p class="projects-text">A Figma wireframe of my portfolio to display projects I've worked on, emulating Netflix's UI - currently implementing this into code</p>
+                        <!--<p class="projects-text"><strong>Tools:</strong> Figma, HTML, CSS, JavaScript</p>-->
                     </div>
                 </div>
 
@@ -301,8 +316,12 @@ functionality:
                                 <a href="https://devpost.com/software/befit-t3igks"> 
                                     <img class="logo-images link-icon" src="./images/link.png" alt="link icon"></a>
                             </div>
+                            <div class="tools">
+                                <mark>Figma</mark>
+                                <mark>Swift</mark>
+                            </div>
                             <p class="projects-text">A social app to encourage users to achieve their fitness goals by blending the social aspects of BeReal with personalized daily challenges</p>
-                            <p class="projects-text"><strong>Tools:</strong> Figma, Swift</p>
+                            <!--<p class="projects-text"><strong>Tools:</strong> Figma, Swift</p>-->
                         </div>
                 </div>
 
@@ -332,7 +351,7 @@ functionality:
 
                 <div class="all-projects">
                     <a href="https://www.figma.com/proto/JUuwTzzoJKiHQjOWIDMA3f/Samantha-Yee's-Portfolio?page-id=0%3A1&node-id=280-469&node-type=canvas&viewport=486%2C281%2C0.24&t=QXzAgEE2RetdigCq-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=280%3A469">
-                        <button>see all projects!</button></a>
+                        <button>see all projects! ‧₊˚❀༉</button></a>
                 </div>
 
                <!-- <div class="projects-gcard all-projects">
@@ -343,14 +362,14 @@ functionality:
         </div>
 
         <!-- contact me -->
-        <div id="contact-me" class="v-fcard">
+        <div id="contact-me" class="v-fcard anchor">
             <div id="contact-me-container">
                 <!-- <img id="contact-bg-img" src="./images/contact-me.png" alt="picture of greece and ocean" width="100%"> -->
 
                 <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                    <div class="image-text-overlap">
+                    <div id="contact-form-header">
+                        <h2 id="contact-me-header"><span class="flower-font xxx-large">R</span>each out!</h2>
                         <img class="cherry-blossom-flower" src="./images/cherry-blossom.svg" alt="cherry blossom flower">
-                        <h2>CONTACT ME</h2>
                     </div>
 
                     <!--<div class="flowers">
@@ -381,14 +400,14 @@ functionality:
                         </div>-->
                     <input type="hidden" name="access_key" value="855507b2-e06d-4e81-9cc8-7b3e20a795bc">
 
-                    <label for="fname">full name:</label><br>
+                    <label for="fname">name:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="enter your full name" required>
 
                     <label for="email">email:</label><br>
                     <input type="email" id="email" name="email" placeholder="enter your email" required>
 
                     <label for="message">message:</label><br>
-                    <textarea type="text" id="message" name="message" placeholder="type message" required></textarea>
+                    <textarea type="text" id="message" name="message" placeholder="hope to hear from you!" required></textarea>
 
                     <!-- Honeypot Spam Protection -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -398,6 +417,7 @@ functionality:
 
             </div>
 
+        <p><i>- A snapshot of my time in Santorini, Greece :) </i></p>
 
         </div>
 
@@ -406,6 +426,11 @@ functionality:
             <p>Samantha Yee © 2025</p>
 
             <div id="footer-logo-flex-container">
+                <a href="mailto: sayee@uwaterloo.ca"> 
+                <div class="l-card">
+                    <img class="logo-images" src="./images/email-tan.png" alt="email logo" width="30px"></a>
+                </div>
+
                 <a href="https://www.linkedin.com/in/samanthayee6/"> 
                 <div class="l-fcard">
                     <img class="logo-images" src="./images/linkedin-tan.png" alt="linkedin logo" width="30px"></a>
@@ -415,16 +440,13 @@ functionality:
                 <div class="l-fcard">
                     <img class="logo-images" src="./images/github-tan.png" alt="github logo" width="30px"></a>
                 </div>
-
-                <a href="mailto: sayee@uwaterloo.ca"> 
-                <div class="l-card">
-                    <img class="logo-images" src="./images/email-tan.png" alt="email logo" width="30px"></a>
-                </div>
+                
             </div>
         </footer>
 
     </div>
 <!--
+
     <h1>Typewriter</h1>
 
     <button onclick="typeWriter()">Click me</button>
@@ -469,5 +491,8 @@ functionality:
     </script>
 
     -->
+    <!-- javascript -->
+    <script src="./contact_form.js"></script>
+    <script src="./nav.js"></script>
 </body>
 </html>

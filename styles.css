@@ -34,7 +34,7 @@ h3 {
     font-weight: 100;
 }
 
-p{
+p, .about-flex-container li {
     font-size: 1.1rem;
 }
 
@@ -44,12 +44,12 @@ p{
     font-weight: 100;
 }
 
-
 .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .12em solid #9EB384; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    text-align: left;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -75,7 +75,37 @@ p{
     50% { border-color: #9EB384; }
 }
 
+#favicon {
+    font-family: "Fleur De Leah", cursive !important;
+}
 
+#favicon-container {
+    flex: 2;
+}
+
+/* fonts */
+span.flower-font {
+    font-family: "Fleur De Leah", cursive;
+    letter-spacing: 0.65rem;
+    color: inherit;
+}
+
+span.callout-font {
+    font-family: 'DM Serif Display', serif;
+    color: inherit;
+}
+
+.larger {
+    font-size: larger;
+}
+
+.xx-large {
+    font-size: xx-large;
+}
+
+.xxx-large {
+    font-size: xxx-large;
+}
 
 .subtitle {
     color: #9EB384;
@@ -99,27 +129,13 @@ button {
     border-radius: 4px;
     text-align: center;
     transition-duration: 0.4s;
-    padding: 7px;
+    padding: 7px 15px;
 }
 
 button:hover {
     cursor: pointer;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-/* button:active {
-    background-color: #91B4DC;
-    color: #FAF1E4;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  } */
-
-/* hr {
-    height: 0.5px;
-    width: 100%;
-    color: white;
-    background-color: white;
-} */
 
 /* nav bar styling */
 @media (min-width: 787px) {
@@ -161,19 +177,17 @@ button:hover {
         text-shadow: 4px 6px 6px rgba(0,0,0,0.24);
     }
 
-    #nav a.icon {
+    #nav a#nav-toggle {
         display: none !important;
     }
 
     #favicon {
-        /*font-family: 'DM Serif Display', serif !important; */
-        font-family: 'Fleur De Leah', cursive !important;
         font-weight: normal;
         font-size: 3rem;
         flex: 2;
     } 
     
-    #nav a.icon {
+    #nav a#nav-toggle {
         display: none;
         position: absolute;
         right: 0;
@@ -256,9 +270,13 @@ button:hover {
 }*/
 
 .cherry-blossom-flower {
-    width: 20px;
-    position: absolute;
-    left: 150px;
+    width: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.cherry-blossom-flower:hover {
+    transform: rotate(10deg);
+    transition-duration: 0.4s;
 }
 
 /* cherry blossoms 
@@ -384,8 +402,17 @@ button:hover {
     }
   }*/
 
-.image-text-overlap {
+#contact-form-header {
     position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: start;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+#contact-me-header {
+    margin: 0;
 }
 
 .logo-images {
@@ -437,7 +464,7 @@ button:hover {
     margin: 2rem 8rem 1rem;
 }
 
-.v-fcard {
+.anchor {
     padding-top: 6rem;
 }
 
@@ -479,14 +506,9 @@ button:hover {
     border-radius: 10px;
 }
 
-.projects-fcard .projects-img:hover {
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
-}
-
 .projects-fcard p {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
-    margin-top: 0;
 }
 
 .projects-fcard * {
@@ -495,7 +517,6 @@ button:hover {
 
 .projects-text {
     margin-right: 1rem;
-    margin-bottom: 0;
 }
 
 .projects-fcard h3 {
@@ -520,11 +541,13 @@ button:hover {
     justify-content: center;
 }
 
-/* skills container styling */
-#skills-container {
-    width: 100%;
+/* about me container styling */
+.about-flex-container li::marker {
+  content: "❀ ";
+  font-size: larger;
 }
 
+/* skills container styling */
 #skills-grid-container {
     display: grid;
     grid-template-columns: 7rem 7rem 7rem;
@@ -569,7 +592,12 @@ button:hover {
     background-color: #FAF1E4;
     border-radius: 10px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24), 0 4px 12px 0 rgba(0,0,0,0.19);
-    padding: 0 0 10px 0;
+    padding: 0 10px 10px 10px;
+}
+
+.projects-gcard:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
 }
 
 .all-projects {
@@ -587,7 +615,6 @@ button:hover {
 }
 
 .all-projects button:hover {
-    cursor: pointer;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -617,7 +644,7 @@ button:hover {
 }
   
 @media (min-width: 787px) {
-    /* Container around content */
+    /* container around content */
     .t-container {
         padding: 10px 40px;
         position: relative;
@@ -625,7 +652,7 @@ button:hover {
         width: 50%;
     }
 
-    /* The circles on the timeline */
+    /* cherry blossoms on the timeline */
     .t-container::after {
         content: '';
         background-image: url(./images/cherry-blossom.png);
@@ -640,18 +667,23 @@ button:hover {
         top: 15px;
         z-index: 1;
     }
+
+    .t-container:hover::after {
+        transform: rotate(10deg);
+        transition-duration: 0.4s;
+    }
     
-    /* Place the container to the left */
+    /* place container to the left */
     .left {
         left: -80px;
     }
     
-    /* Place the container to the right */
+    /* place container to the right */
     .right {
         left: 50%;
     }
     
-    /* Add arrows to the left container (pointing right) */
+    /* add arrows to the left container (pointing right) */
     .left::before {
         content: " ";
         height: 0;
@@ -665,7 +697,7 @@ button:hover {
         border-color: transparent transparent transparent #FAF1E4;
     }
     
-    /* Add arrows to the right container (pointing left) */
+    /* add arrows to the right container (pointing left) */
     .right::before {
         content: " ";
         height: 0;
@@ -679,14 +711,14 @@ button:hover {
         border-color: transparent #FAF1E4 transparent transparent;
     }
     
-    /* Fix the circle for containers on the right side */
+    /* fix the circle for containers on the right side */
     .right::after {
         left: -26px;
     }
   
 }
 
-/* The actual content */
+/* actual content */
 .t-content {
     padding: 20px 30px;
     background-color: #FAF1E4;
@@ -696,17 +728,31 @@ button:hover {
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
 
-.t-content h3 {
+.t-content h3, .t-content p {
     color:#9EB384;
 }
 
-.t-content p {
-    color:#9EB384;
+.t-descriptions {
+    font-size: 1.1rem;
 }
 
-.t-content li {
-    color:#9EB384;
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.tools mark {
+    background-color: #FCC9CD;
+    color: #D16A69;
     font-size: 0.9rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 999999px;
+    padding-inline-start: 0.25rem;
+    padding-inline-end: 0.25rem;
+    line-height: 0.5;
 }
 
 .t-content strong {
@@ -790,9 +836,18 @@ textarea {
     color: lightgray;
 }
 
+/* Desktop CSS (less than 1300px) */
+@media (max-width: 1300px){
+    #projects-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 /* Mobile CSS (less than 787px but more than 480px) */
-@media (min-width : 480px) and (max-width: 787px) {
-    p{
+@media (max-width: 787px) {
+    p, .about-flex-container li {
         font-size: 1.1rem;
     }
     
@@ -837,6 +892,10 @@ textarea {
         display: none;
     }
 
+    #nav-links.open {
+        display: block;
+    }
+
     #nav-links a {
         font-size: 1.5rem;
         padding-top: 0 !important;
@@ -850,7 +909,7 @@ textarea {
         font-family: 'DM Serif Display', serif;
     }
       
-    #nav a.icon {
+    #nav a#nav-toggle {
         display: block;
         position: absolute;
         right: 0;
@@ -858,7 +917,6 @@ textarea {
     }
     
     #favicon {
-        font-family: "Fleur De Leah", cursive !important;
         font-size: 4rem;
     } 
 
@@ -920,9 +978,13 @@ textarea {
         margin: 2rem 4rem 1rem;
     }
 
-    .v-fcard {
-        margin-top: 3rem;
-        padding-top: 0
+    .anchor {
+        /*margin-top: 3rem;*/
+        padding-top: 7rem;
+    }
+
+    #projects {
+        padding-top: 8rem;
     }
 
     #home-flex-container {
@@ -947,6 +1009,10 @@ textarea {
         gap: 0rem;
     }
 
+    #skills-container {
+        width: 100%;
+    }
+
     #skills-grid-container {
         /*row-gap: 7rem;
         column-gap: 5rem;*/
@@ -968,7 +1034,7 @@ textarea {
         margin-bottom: 6rem;
     }
 
-    .t-content li {
+    .tools mark {
         font-size: 0.9rem;
     }
 
@@ -991,11 +1057,6 @@ textarea {
         height: 100%;
     }
 
-    #projects-grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .projects-flex-container {
         flex-direction: column;
         padding: 20px;
@@ -1003,8 +1064,12 @@ textarea {
         align-items: center;
     }
 
+    .link-flex-container a img {
+        margin-top: 0;
+    }
+
     .link-flex-container {
-        align-items: end;
+        align-items: center;
     }
 
     .img-stack {
@@ -1056,7 +1121,7 @@ textarea {
 
 /* Mobile CSS (less than 480px) */
 @media (max-width: 480px) {
-    p{
+    p, .about-flex-container li {
         font-size: 1.5rem;
     }
     
@@ -1115,7 +1180,7 @@ textarea {
         font-family: 'DM Serif Display', serif;
     }
       
-    #nav a.icon {
+    #nav a#nav-toggle {
         display: block;
         position: absolute;
         right: 0;
@@ -1123,7 +1188,6 @@ textarea {
     }
     
     #favicon {
-        font-family: "Fleur De Leah", cursive !important;
         font-size: 6rem;
     } 
 
@@ -1189,9 +1253,12 @@ textarea {
         margin: 2rem 4rem 1rem;
     }
 
-    .v-fcard {
-        margin-top: 3rem;
-        padding-top: 0;
+    .anchor {
+        padding-top: 9rem;
+    }
+
+    #projects {
+        padding-top: 12rem;
     }
 
     #home-flex-container {
@@ -1207,29 +1274,10 @@ textarea {
     }
 
     .logo-images {
-        width: 42px;
+        width: 35px;
     }
 
     /* about me section mobile */
-    .about-flex-container {
-        flex-wrap: wrap;
-        gap: 0rem;
-    }
-
-    #skills-grid-container {
-        /*row-gap: 7rem;
-        column-gap: 5rem;*/
-        grid-template-columns: 27% 27% 27%;
-        grid-template-rows: auto auto;
-    }
-
-    .s-gcard {
-        /*padding: 110px 80px;*/
-    }
-
-    .s-gcard p {
-        margin: 10px 20px;
-    }
     
     /* timeline section mobile */
     .t-content {
@@ -1237,7 +1285,7 @@ textarea {
         margin-bottom: 3rem;
     }
 
-    .t-content li {
+    .tools mark {
         font-size: 1.3rem;
     }
 
@@ -1256,20 +1304,11 @@ textarea {
         height: 100%;
     }
 
-    #projects-grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .projects-flex-container {
         flex-direction: column;
         padding: 20px;
         gap: 0;
         align-items: center;
-    }
-
-    .link-flex-container {
-        align-items: end;
     }
 
     .img-stack {
@@ -1293,6 +1332,10 @@ textarea {
         display: flex;
         align-items: center;
         justify-content: center
+    }
+
+    #contact-me-header {
+        font-size: 2.5rem;
     }
     
     label {
