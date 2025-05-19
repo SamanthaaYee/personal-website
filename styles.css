@@ -13,11 +13,14 @@ html {
 }
 
 body{
-    background-color: #9EB384;
+    /*background-color: #9EB384;*/
+    background-image: radial-gradient(#9EB384 70%, #b8c9a3);
     margin: 0;
     overflow-x: hidden;
-    max-width: 100%
+    max-width: 100%;
 }
+
+
 
 h1 {
     color: #9EB384;
@@ -430,11 +433,7 @@ button:hover {
     width: 1.4rem;
 }
 
-/*.projects-img {
-    position: relative;
-}
-
-.projects-banner {
+/*.projects-banner {
     position: absolute;
     left: 11%;
 }*/
@@ -641,6 +640,7 @@ button:hover {
     left: 50%;
     margin-left: -3px;
     z-index: -1;
+    border-radius: 10px;
 }
   
 @media (min-width: 787px) {
