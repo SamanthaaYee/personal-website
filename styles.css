@@ -13,14 +13,13 @@ html {
 }
 
 body{
-    /*background-color: #9EB384;*/
-    background-image: radial-gradient(#9EB384 70%, #b8c9a3);
+    background-color: #9EB384;
+    background-image: radial-gradient(#9EB384 70%, rgb(197, 212, 178, 0.5));
+    /*background-image: linear-gradient(to bottom right, #9EB384, rgb(197, 212, 178, 0.5));*/
     margin: 0;
     overflow-x: hidden;
     max-width: 100%;
 }
-
-
 
 h1 {
     color: #9EB384;
@@ -116,10 +115,6 @@ span.callout-font {
     width: 75%;
 }
 
-#profile-pic {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
 footer {
     margin-top: 50px;
     text-align: center;
@@ -137,7 +132,9 @@ button {
 
 button:hover {
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    transform: scale(1.05);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24);
 }
 
 /* nav bar styling */
@@ -229,6 +226,12 @@ button:hover {
 /* image styling */
 #profile-pic {
     border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#profile-pic:hover {
+    transform: scale(1.01);
+    transition-duration: 0.4s;
 }
 
 #cherry-blossom-wrapper {
@@ -271,16 +274,6 @@ button:hover {
 @keyframes enter2 {
     from {right: -450px; top: -325px;} 
 }*/
-
-.cherry-blossom-flower {
-    width: 1.5rem;
-    margin-top: 0.7rem;
-}
-
-.cherry-blossom-flower:hover {
-    transform: rotate(10deg);
-    transition-duration: 0.4s;
-}
 
 /* cherry blossoms 
 .flowers {
@@ -419,14 +412,15 @@ button:hover {
 }
 
 .logo-images {
-    transition-duration: 0.4s;
     width: 26px;
     display: block;
 }
 
 .logo-images:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     border-radius: 100%;
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.24);
 }
 
 .link-icon {
@@ -564,14 +558,13 @@ button:hover {
     padding-top: 1rem;
     background-color: #FAF1E4;
     border-radius: 10px;
-}
-
-.s-gcard {
     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 8px 25px 0 rgba(0,0,0,0.19);
 }
 
 .s-gcard:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 50px 0 rgba(0,0,0,0.19);
+    transform: scale(1.05);
+    transition-duration: 0.4s;
 }
 
 .s-gcard p {
@@ -597,6 +590,7 @@ button:hover {
 .projects-gcard:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s;
+    transform: scale(1.01);
 }
 
 .all-projects {
@@ -615,10 +609,11 @@ button:hover {
 
 .all-projects button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    transform: scale(1.01);
 }
 
 /* timeline styling */
-
 #timeline {
     position: relative;
     max-width: 80%;
@@ -669,7 +664,7 @@ button:hover {
     }
 
     .t-container:hover::after {
-        transform: rotate(10deg);
+        transform: rotate(10deg) scale(1.1);
         transition-duration: 0.4s;
     }
     
@@ -733,7 +728,7 @@ button:hover {
 }
 
 .t-descriptions {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .tools {
@@ -759,10 +754,13 @@ button:hover {
     color:#9EB384;
 }
 
-.t-content:hover {
+.t-content:hover, .t-container:hover .t-content {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 16px 50px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+    transform: scale(1.01);
 }
 
+/* contact me section */
 #contact-me-container {
     background-image: url(./images/contact-me.png);
     border-radius: 10px;
@@ -785,6 +783,11 @@ button:hover {
     padding-left: 3rem;
     margin-top: 5rem;
     margin-right: 5rem;
+}
+
+#contact-form:hover {
+    transform: scale(1.01);
+    transition-duration: 0.4s;
 }
 
 #contact-form *{
@@ -834,6 +837,16 @@ textarea {
 
 ::placeholder {
     color: lightgray;
+}
+
+.cherry-blossom-flower.contact-me {
+    width: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+#contact-form:hover .cherry-blossom-flower.contact-me {
+    transform: rotate(10deg) scale(1.1);
+    transition-duration: 0.4s;
 }
 
 /* Desktop CSS (less than 1300px) */
