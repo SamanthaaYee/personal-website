@@ -1,5 +1,11 @@
 <!-- personal comments:
  - split into multiple pages
+ - add to about me - "beyond engineering and design, you'll probably find me on one of these apps...
+   - Letterboxd
+   - Goodreads
+   - Spotify
+   - Pinterest
+   - Beli"
  - case studies for work or projects? or both
 
 functionality:
@@ -12,7 +18,8 @@ functionality:
     
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Hi! I'm Samantha! I'm a developer and designer studying Systems Design Engineering at the University of Waterloo">
     <meta name="keywords" content="University of Waterloo, UWaterloo, SYDE, Systems Design Engineering, Developer, Designer, Engineer, HTML, CSS, JavaScript, Liquid, Python, Figma, Resume, Portfolio">
     <title>samantha yee</title>
@@ -39,6 +46,7 @@ functionality:
             <a class="non-home" href= "#about-me">about</a>
             <a class="non-home" href= "#my-experiences">experiences</a>
             <a class="non-home" href= "#projects">projects</a>
+            <a class="non-home" href= "https://drive.google.com/file/d/1L2s-bmF5wPp1uscyd4c3P9T4V9A65ov9/view?usp=drive_link">resume</a>
             <a class="non-home" href= "#contact-me">contact</a>
         </div>
         <a id="nav-toggle" href="javascript:void(0);" onclick="toggleNav(this)">
@@ -64,7 +72,7 @@ functionality:
 
                     <!--<h1 id="title" class="typewriter">hi,<br>i'm samantha!</h1>-->
                 </div>
-                <p class="subtitle"><span class="callout-font">Systems Design Engineering</span> student @ <span class="callout-font">UWaterloo</span> - welcome to my website :)</p>
+                <p class="subtitle"><span class="callout-font">Front-End Developer</span> & <span class="callout-font">Systems Design Engineering</span> student @ <span class="callout-font">UWaterloo</span> - welcome to my website :)</p>
 
                 <br>
 
@@ -105,8 +113,8 @@ functionality:
                     <h2>about</h2>
                     <p> 
                         Hi! My name is Samantha Yee and I'm in my third year at the University of Waterloo studying Systems Design Engineering! <br><br>
-                        <i><span class="callout-font xx-large">“<span class="flower-font xxx-large">W</span>hat even is Systems Design Engineering?”</span><br>
-                        - A question I asked myself when applying. </i><br><br>
+                        <!--<i><span class="callout-font xx-large">“<span class="flower-font xxx-large">W</span>hat even is Systems Design Engineering?”</span><br>
+                        - A question I asked myself when applying. </i><br><br>-->
                         To me, SYDE allows me to explore two key ideas:
                     </p>
                     <ol>
@@ -125,45 +133,69 @@ functionality:
                     <div id="skills-grid-container">
                         <!-- HTML block -->
                         <div class="s-gcard">
-                            <img src="./images/html-logo.png" alt="HTML logo" width="93px" height="93px">
-                            <p>HTML</p>
+                            <div class="inners-gcard">
+                                <img src="./images/html-logo.png" alt="HTML logo" width="70px" height="70px">
+                                <p>HTML</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- CSS block -->
                         <div class="s-gcard">
-                            <img src="./images/css-logo.png" alt="CSS logo" width="93px" height="93px">
-                            <p>CSS</p>
+                            <div class="inners-gcard">
+                                <img src="./images/css-logo.png" alt="CSS logo" width="70px" height="70px">
+                                <p>CSS</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
                         </div>
                         
                         <!-- JS block -->
                         <div class="s-gcard">
-                            <img src="./images/js-logo.png" alt="JavaScript logo" width="93px" height="93px">
-                            <p>JavaScript</p>
+                            <div class="inners-gcard">
+                                <img src="./images/js-logo.png" alt="JavaScript logo" width="70px" height="70px">
+                                <p>JavaScript</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Figma block -->
                         <div class="s-gcard">
-                            <img src="./images/figma-logo.png" alt="Figma logo" width="93px" height="93px">
-                            <p>Figma</p>
+                            <div class="inners-gcard">
+                                <img src="./images/figma-logo.png" alt="Figma logo" width="70px" height="70px">
+                                <p>Figma</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Liquid block -->
                         <div class="s-gcard">
-                            <img src="./images/liquid.png" alt="Liquid (Shopify) logo" width="93px" height="93px">
-                            <p>Liquid</p>
+                            <div class="inners-gcard">
+                                <img src="./images/liquid.png" alt="Liquid (Shopify) logo" width="70px" height="70px">
+                                <p>Liquid</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 60%;"></div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- Python block -->
                         <div class="s-gcard">
-                            <img src="./images/python-logo.png" alt="Python logo" width="93px" height="93px">
-                            <p>Python</p>
+                            <div class="inners-gcard">
+                                <img src="./images/python-logo.png" alt="Python logo" width="70px" height="70px">
+                                <p>Python</p>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 70%;"></div>
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- C++ block
-                        <div class="s-gcard">
-                            <img src="./images/c++-logo.png" alt="C++ logo">
-                            <p>C++</p>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -225,7 +257,6 @@ functionality:
                             <mark>Python</mark>
                             <mark>Git</mark>
                             <mark>Google Colab</mark>
-                            <mark>MS Excel</mark>
                         </div>
                         <p class="t-descriptions">Built a Python-based machine learning model (78% accuracy) to assess cardiovascular risk, working with 4.6M+ data points and time-series imputation techniques</p>
                         <!--<p><strong>Tools:</strong> Python, Git, Google Colab, MS Excel</p>-->
